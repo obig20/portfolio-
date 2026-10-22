@@ -1,164 +1,372 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101713">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>N</text></svg>">
-  <meta name="description" content="Portfolio of Noha Tilahun — data analytics, AI data annotation, Python, SQL, and applied AI projects.">
-  <link rel="canonical" href="https://noha-tilahun-portfolio-gbf6.vercel.app/">
-  <meta property="og:title" content="Noha Tilahun — Data & AI Portfolio">
-  <meta property="og:description" content="Data analytics, applied machine learning, and AI automation projects.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://noha-tilahun-portfolio-gbf6.vercel.app/">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Noha Tilahun — Data & AI Portfolio">
-  <meta name="twitter:description" content="Data analytics, applied machine learning, and AI automation projects.">
-  <title>Noha Tilahun — Data & AI Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noha Tilahun — Data Analytics, Data Annotation, and Computer Engineering Student</title>
+  <meta name="description" content="Portfolio of Noha Tilahun, a Computer Engineering student at AASTU specializing in Data Analytics, AI Data Annotation, and Machine Learning." />
+  <link rel="canonical" href="https://noha-tilahun-portfolio-gbf6.vercel.app/" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://noha-tilahun-portfolio-gbf6.vercel.app/" />
+  <meta property="og:title" content="Noha Tilahun — Portfolio" />
+  <meta property="og:description" content="Data Analytics, AI Data Annotation, and Computer Engineering Student based in Addis Ababa, Ethiopia." />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <nav class="nav shell" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="Noha Tilahun home"><span class="brand-mark">N.</span><span>NOHA TILAHUN</span></a>
-<button class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
-      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation"><span></span><span></span></button>
-      <div class="nav-links" id="nav-links">
-        <a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a>
-        <a class="nav-contact" href="https://t.me/obig20" target="_blank" rel="noopener">Let's talk <span aria-hidden="true">↗</span></a>
+  <!-- Skip to Main Content for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <a href="#" class="brand-logo" aria-label="Noha Tilahun Home">
+        <span class="logo-badge">N.</span>
+        <span class="logo-text">NOHA TILAHUN</span>
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle light/dark theme" aria-pressed="false">
+          <span class="theme-icon-dark" aria-hidden="true">🌙</span>
+          <span class="theme-icon-light" aria-hidden="true">☀️</span>
+        </button>
+        <a href="https://t.me/obig20" target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-cta">Let's talk ↗</a>
       </div>
     </nav>
   </header>
 
-  <main id="main">
-    <section class="hero shell" id="home">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="status-dot"></span> Data Analytics | Data Annotation | Computer Engineering Student</div>
-        <h1>Turning complex data<br>into <span class="accent">clear decisions.</span></h1>
-        <p class="hero-intro">I'm Noha Tilahun, a Computer Engineering student working across data analytics, machine learning, AI data annotation, and practical automation.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
-          <a class="button button-secondary" href="assets/Noha-Tilahun-CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
-        </div>
-        <div class="hero-meta"><span>BASED IN ADDIS ABABA, ETHIOPIA</span><span class="meta-line"></span><span>OPEN TO OPPORTUNITIES</span></div>
-      </div>
-      <div class="hero-art" aria-label="Abstract data visualization illustration">
-        <div class="art-top"><span>DATA / SYSTEMS</span><span>001 — 026</span></div>
-        <div class="orbital orbital-one"></div><div class="orbital orbital-two"></div>
-        <div class="core"><span class="core-cross">+</span><span class="core-label">SIGNAL<br>FOUND</span></div>
-        <div class="data-bar bar-one"><span>ANALYZE</span><i style="--v:78%"></i></div>
-        <div class="data-bar bar-two"><span>MODEL</span><i style="--v:56%"></i></div>
-        <div class="data-bar bar-three"><span>DELIVER</span><i style="--v:88%"></i></div>
-        <div class="art-coordinates">9.03° N<br>38.74° E</div>
-        <div class="art-index">FIG. 01 / THINK IN SYSTEMS</div>
-      </div>
-      <div class="hero-bottom"><span>PYTHON / SQL / MACHINE LEARNING</span><span>SCROLL TO EXPLORE <span aria-hidden="true">↓</span></span></div>
-    </section>
-
-    <section class="section about-section" id="about">
-      <div class="shell section-grid">
-        <div class="section-label"><span>01 / PROFILE</span><span class="label-rule"></span></div>
-        <div class="section-content">
-          <p class="kicker">A little about me</p>
-          <h2>Curious by nature.<br><span class="muted">Analytical by practice.</span></h2>
-          <div class="about-columns">
-            <p>I'm studying Electrical and Computer Engineering at Addis Ababa Science and Technology University, while building practical experience in data analysis, AI workflows, and software projects.</p>
-            <p>My work spans data cleaning, customer and revenue analysis, fraud detection, language-data quality, and AI-powered automation. I enjoy investigating how systems behave, validating results, and turning technical work into something useful.</p>
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="pulse-dot"></span>
+            DATA ANALYTICS · AI DATA ANNOTATION · COMPUTER ENGINEERING
           </div>
-          <div class="focus-strip"><span>MY CURRENT FOCUS</span><strong>Reliable data · Explainable models · Useful automation</strong></div>
-        </div>
-      </div>
-    </section>
+          <h1 class="hero-title">
+            Turning complex data into <span class="highlight-text">clear decisions.</span>
+          </h1>
+          <p class="hero-subtitle">
+            I'm Noha Tilahun, a Computer Engineering Student working across data analytics, machine learning, AI data annotation, and practical automation.
+          </p>
 
-    <section class="section projects-section" id="projects">
-      <div class="shell">
-        <div class="section-heading">
-          <div><p class="kicker">02 / SELECTED WORK</p><h2>Projects with a purpose<span class="accent">.</span></h2></div>
-          <p class="heading-note">Practical explorations in analytics, machine learning, and automation.</p>
-        </div>
-        <div class="project-grid">
-          <article class="project-card project-featured">
-            <div class="project-visual visual-revenue"><div class="visual-top"><span>REVENUE INTELLIGENCE</span><span>01</span></div><div class="mini-chart"><span style="--h:28%"></span><span style="--h:42%"></span><span style="--h:36%"></span><span style="--h:60%"></span><span style="--h:52%"></span><span style="--h:78%"></span><span style="--h:68%"></span><span style="--h:92%"></span></div><div class="chart-footer"><span>TRANSACTION DATA</span><span>SQL + PYTHON</span></div></div>
-            <div class="project-info"><div class="project-type">ANALYTICS / DASHBOARDS</div><h3>E-commerce Revenue Intelligence</h3><p>Built an end-to-end analytics pipeline for transaction data, including customer segmentation, RFM analysis, revenue and behavioral analysis, and interactive reporting components.</p><div class="tags"><span>Python</span><span>SQL</span><span>PostgreSQL</span><span>Tableau</span><span>Streamlit</span><span>FastAPI</span></div><a class="project-link" href="https://github.com/obig20/olist-revenue-intelligence-project" target="_blank" rel="noopener">View on GitHub ↗</a>
-          </article>
-          <article class="project-card">
-            <div class="project-visual visual-clean"><div class="visual-top"><span>DATA QUALITY PIPELINE</span><span>02</span></div><div class="code-window"><div class="code-dots">● ● ●</div><p><b>01</b> load_dataset()</p><p><b>02</b> detect_issues()</p><p><b>03</b> clean_values()</p><p><b>04</b> validate_output()</p><div class="success-line">✓ validation complete</div></div></div>
-            <div class="project-info"><div class="project-type">DATA ENGINEERING</div><h3>Python Data Cleaning Automation</h3><p>Created a reusable workflow to clean and validate messy datasets, then compared raw and cleaned data to verify transformations and reduce repetitive manual work.</p><div class="tags"><span>Python</span><span>Pandas</span><span>Validation</span></div><a class="project-link" href="https://github.com/obig20/Python-Data-Cleaning-Automation" target="_blank" rel="noopener">View on GitHub ↗</a>
-          </article>
-          <article class="project-card">
-            <div class="project-visual visual-fraud"><div class="visual-top"><span>MODEL EXPLAINABILITY</span><span>03</span></div><div class="fraud-score"><div class="score-ring"><span>ML</span></div><div><span class="score-label">MODEL WORKFLOW</span><strong>Fraud detection</strong><small>Interpret · Evaluate · Improve</small></div></div><div class="feature-bars"><i style="--w:84%"></i><i style="--w:57%"></i><i style="--w:72%"></i></div></div>
-            <div class="project-info"><div class="project-type">MACHINE LEARNING</div><h3>Banking Fraud Detection</h3><p>Developed a workflow to identify potentially fraudulent transactions, examine model performance, and interpret predictions using feature-explainability techniques.</p><div class="tags"><span>Scikit-learn</span><span>Random Forest</span><span>SHAP</span><span>LIME</span></div><a class="project-link" href="https://github.com/obig20/fruad_detection" target="_blank" rel="noopener">View on GitHub ↗</a>
-          </article>
-          <article class="project-card">
-            <div class="project-visual visual-ai"><div class="visual-top"><span>MESSAGE AUTOMATION</span><span>04</span></div><div class="flow-nodes"><div>INBOUND<br>MESSAGE</div><b>→</b><div>LLM<br>CLASSIFIER</div><b>→</b><div>RESPONSE</div></div><div class="flow-caption">FASTAPI / N8N / TELEGRAM</div></div>
-            <div class="project-info"><div class="project-type">AI / AUTOMATION</div><h3>AI Lead Response System</h3><p>Built a system to classify incoming messages, infer customer intent and priority, and generate responses using a locally hosted language model integrated with an n8n workflow and Telegram.</p><div class="tags"><span>Python</span><span>FastAPI</span><span>LLM</span><span>n8n</span><span>Telegram API</span></div><a class="project-link" href="https://github.com/obig20/leadforge" target="_blank" rel="noopener">View on GitHub ↗</a>
-          </article>
-          <article class="project-card project-compact">
-            <div class="project-number">05</div><div class="project-info"><div class="project-type">SQL / WORKFORCE INSIGHTS</div><h3>HR Analytics SQL Project</h3><p>Used filtering, joins, grouping, aggregation, and subqueries to explore HR-related data and answer workforce-analysis questions.</p><div class="tags"><span>SQL</span><span>Data Analysis</span></div><a class="project-link" href="https://github.com/obig20/HR_analytics_SQL_Project" target="_blank" rel="noopener">View on GitHub ↗</a>
-          </article>
-        </div>
-        </div>
-      </div>
-    </section>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Explore my work ↓</a>
+            <a href="/assets/Noha-Tilahun-CV.pdf" download class="btn btn-secondary">Download CV ↓</a>
+          </div>
 
-    <section class="section experience-section" id="experience">
-      <div class="shell section-grid">
-        <div class="section-label"><span>03 / EXPERIENCE</span><span class="label-rule"></span></div>
-        <div class="section-content">
-          <p class="kicker">Professional experience</p><h2>Careful work.<br><span class="muted">Consistent quality.</span></h2>
-          <div class="timeline">
-            <article class="timeline-item"><div class="timeline-date">AUG 2025 — PRESENT</div><div><h3>Freelance AI Data Annotation & Language Specialist</h3><p class="timeline-org">Independent / Project-based</p><ul><li>Annotate English and Amharic language data for AI-related projects.</li><li>Transcribe audio, identify speakers, add timestamps, and label audio events.</li><li>Review and validate annotations to improve consistency and quality.</li></ul></div></article>
-            <article class="timeline-item"><div class="timeline-date">2026 — PRESENT</div><div><h3>Data Labeling & Annotation</h3><p class="timeline-org">R&D Group</p><ul><li>Label, categorize, review, and validate datasets against project guidelines.</li><li>Maintain annotation quality and consistency for AI/ML applications.</li><li>Apply attention to detail while meeting remote project requirements.</li></ul></div></article>
-            <article class="timeline-item"><div><h3>Freelance Amharic Audio Transcription</h3><p class="timeline-org">Freelance</p><ul><li>Produced Amharic transcripts and corrected AI-generated transcripts.</li><li>Identified speakers and background audio events while maintaining confidentiality.</li></ul></div></article>
+          <div class="hero-meta">
+            <span>BASED IN ADDIS ABABA, ETHIOPIA</span>
+            <span class="meta-separator">—</span>
+            <span>OPEN TO OPPORTUNITIES</span>
+          </div>
+
+          <div class="profiles-row">
+            <a href="https://github.com/obig20" target="_blank" rel="noopener noreferrer" class="social-link">GitHub ↗</a>
+            <a href="https://t.me/obig20" target="_blank" rel="noopener noreferrer" class="social-link">Telegram ↗</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="data-widget-card">
+            <div class="widget-header">
+              <span>DATA / SYSTEMS</span>
+              <span class="code-tag">001 — 026</span>
+            </div>
+            <div class="widget-body">
+              <div class="radar-circle">
+                <div class="crosshair"></div>
+                <div class="signal-tag">SIGNAL FOUND</div>
+              </div>
+              <div class="metrics-list">
+                <div class="metric-item">
+                  <span class="metric-label">ANALYZE</span>
+                  <div class="progress-bar"><div class="fill fill-90"></div></div>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">MODEL</span>
+                  <div class="progress-bar"><div class="fill fill-75"></div></div>
+                </div>
+                <div class="metric-item">
+                  <span class="metric-label">DELIVER</span>
+                  <div class="progress-bar"><div class="fill fill-85"></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="widget-footer">
+              <span>FIG. 01 / THINK IN SYSTEMS</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section skills-section" id="skills">
-      <div class="shell">
-        <div class="section-heading"><div><p class="kicker">04 / TOOLKIT</p><h2>Skills & capabilities<span class="accent">.</span></h2></div><p class="heading-note">A practical toolkit for exploring data, building workflows, and communicating findings.</p></div>
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am an undergraduate Computer Engineering student at Addis Ababa Science and Technology University (AASTU) with hands-on experience in Data Analytics, Multimodal AI Data Annotation, and Software Engineering.
+            </p>
+            <p>
+              My focus spans end-to-end data pipelines: from audio/text dataset collection and high-precision keypoint/bounding-box annotation on CVAT, to relational database modeling with MySQL/BigQuery and predictive analytics in Python.
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Core Analytics & Software Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">AASTU</span>
+              <span class="stat-label">Computer Engineering Major</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section bg-alt" id="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+
+          <article class="project-card reveal">
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">AI / ML</span>
+                <span class="tag">Python</span>
+              </div>
+              <h3 class="project-title">Lead Forge (AI Lead Response System)</h3>
+              <p class="project-description">
+                Automated lead response workflow leveraging AI models to process incoming customer queries and speed up response times for small enterprises.
+              </p>
+              <div class="project-footer">
+                <a href="https://github.com/obig20/leadforge" target="_blank" rel="noopener noreferrer" class="link-btn">GitHub Repository ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Data Analytics</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Python</span>
+              </div>
+              <h3 class="project-title">E-Commerce Revenue Intelligence</h3>
+              <p class="project-description">
+                Comprehensive data analytics pipeline analyzing customer behavior, sales trends, and order fulfillment optimization on the Olist e-commerce dataset.
+              </p>
+              <div class="project-footer">
+                <a href="https://github.com/obig20/olist-revenue-intelligence-project" target="_blank" rel="noopener noreferrer" class="link-btn">GitHub Repository ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Scikit-Learn</span>
+              </div>
+              <h3 class="project-title">Fraud Detection System</h3>
+              <p class="project-description">
+                Predictive classification model identifying fraudulent transactions using machine learning techniques and automated data preprocessing pipelines.
+              </p>
+              <div class="project-footer">
+                <a href="https://github.com/obig20/fruad_detection" target="_blank" rel="noopener noreferrer" class="link-btn">GitHub Repository ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">SQL</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">BigQuery</span>
+              </div>
+              <h3 class="project-title">HR Analytics SQL Project</h3>
+              <p class="project-description">
+                Relational database queries and transformations evaluating organizational attrition, workforce distribution, and department efficiency metrics.
+              </p>
+              <div class="project-footer">
+                <a href="https://github.com/obig20/HR_analytics_SQL_Project" target="_blank" rel="noopener noreferrer" class="link-btn">GitHub Repository ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">Automation</span>
+              </div>
+              <h3 class="project-title">Python Data Cleaning Automation</h3>
+              <p class="project-description">
+                Automated script suite designed to handle missing value imputation, structural standardization, and outlier detection across raw CSV datasets.
+              </p>
+              <div class="project-footer">
+                <a href="https://github.com/obig20/Python-Data-Cleaning-Automation" target="_blank" rel="noopener noreferrer" class="link-btn">GitHub Repository ↗</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+
+          <div class="timeline-item reveal">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Multimodal Data Annotator & Quality Control</h3>
+              <span class="timeline-org">CVAT Platform</span>
+            </div>
+            <p class="timeline-desc">
+              Perform keypoint, bounding box, tracking, and action annotation across high-density image and video datasets for Computer Vision model training.
+            </p>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Audio & Speech Data Annotator</h3>
+              <span class="timeline-org">Silencio / Voice AI Network</span>
+            </div>
+            <p class="timeline-desc">
+              Contributed Amharic and English speech recordings and transcriptions to support NLP and Voice AI dataset creation.
+            </p>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-header">
+              <h3 class="timeline-role">Summer Internship Training</h3>
+              <span class="timeline-org">Information Network Security Administration (INSA)</span>
+            </div>
+            <p class="timeline-desc">
+              Completed practical training covering network security fundamentals, systems inspection, and digital infrastructure resilience.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section bg-alt" id="skills">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
         <div class="skills-grid">
-          <article class="skill-card"><span class="skill-index">01</span><h3>Programming</h3><p>Python · SQL · C++ · Java · JavaScript</p></article>
-          <article class="skill-card"><span class="skill-index">02</span><h3>Data & Analytics</h3><p>Pandas · Excel · PostgreSQL · Data cleaning · EDA · Statistical analysis</p></article>
-          <article class="skill-card"><span class="skill-index">03</span><h3>AI & Machine Learning</h3><p>Machine learning · NLP fundamentals · Deep learning fundamentals · Model evaluation · SHAP · LIME</p></article>
-          <article class="skill-card"><span class="skill-index">04</span><h3>APIs & Engineering</h3><p>FastAPI · REST APIs · Git · GitHub</p></article>
-          <article class="skill-card"><span class="skill-index">05</span><h3>Visualization</h3><p>Tableau · Dashboard development · Data visualization</p></article>
-          <article class="skill-card"><span class="skill-index">06</span><h3>Tools & Work Style</h3><p>Jupyter Notebook · Google Colab · Ubuntu/Linux · Problem solving · Communication · Teamwork</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section education-section" id="education">
-      <div class="shell section-grid">
-        <div class="section-label"><span>05 / LEARNING</span><span class="label-rule"></span></div>
-        <div class="section-content">
-          <p class="kicker">Education & credentials</p><h2>Building a strong foundation<span class="accent">.</span></h2>
-          <div class="education-list">
-            <article class="education-item"><div class="education-date">2023 — PRESENT</div><div><h3>Electrical and Computer Engineering</h3><p>Addis Ababa Science and Technology University</p><span class="edu-type">DEGREE IN PROGRESS</span></div></article>
-            <article class="education-item"><div class="education-date">2024 — 2025</div><div><h3>Data Science, Data Analytics, Web Scraping, NLP & Deep Learning</h3><p>10 Academy</p></div></article>
-            <article class="education-item"><div class="education-date">OCT — DEC 2024</div><div><h3>Nanodegree in Fundamentals of Data Science and Data Analysis</h3><p>Udacity</p></div></article>
-            <article class="education-item"><div class="education-date">SEP 2025 — 2026</div><div><h3>Google Data Analytics Professional Certificate</h3><p>Coursera</p><span class="edu-type">CV LISTS 2026 AS END YEAR</span></div></article>
+          <div class="skill-category">
+            <h3>Data Analytics & ML</h3>
+            <ul class="skill-list">
+              <li>Python (Pandas, NumPy, Scikit-Learn)</li>
+              <li>SQL (MySQL, BigQuery)</li>
+              <li>Data Cleaning & Transformation</li>
+              <li>Exploratory Data Analysis (EDA)</li>
+            </ul>
           </div>
-          <div class="cert-block"><h3>Additional training listed in CV</h3><div class="cert-tags"><span>Python Programming — M_Academy Training</span><span>Data Analysis Fundamentals — 10 Academy</span><span>Data Annotation — Udacity Nanodegree</span></div></div>
+
+          <div class="skill-category">
+            <h3>AI Data Annotation</h3>
+            <ul class="skill-list">
+              <li>CVAT (Bounding Boxes, Keypoints, Tracking)</li>
+              <li>Audio Transcription & Speech Alignment</li>
+              <li>Amharic & English Language QA</li>
+              <li>Multimodal Quality Control</li>
+            </ul>
+          </div>
+
+          <div class="skill-category">
+            <h3>Software & Engineering</h3>
+            <ul class="skill-list">
+              <li>React, Vite, JavaScript</li>
+              <li>Tailwind CSS, HTML5, CSS3</li>
+              <li>Git, GitHub Version Control</li>
+              <li>Linux / Ubuntu CLI</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section values-section">
-      <div class="shell values-inner"><p class="kicker">HOW I WORK</p><h2>Good analysis starts with<br><span class="accent">asking better questions.</span></h2><div class="values-list"><span>Analytical thinking</span><span>Attention to detail</span><span>Problem solving</span><span>Adaptability</span><span>Team collaboration</span><span>Time management</span></div><div class="language-row"><span>LANGUAGES</span><strong>English</strong><strong>Amharic</strong></div></div>
+    <!-- Education Section -->
+    <section class="section" id="education">
+      <div class="container">
+        <h2 class="section-title">Education & Credentials</h2>
+        <div class="education-grid">
+          <div class="edu-card">
+            <h3 class="edu-degree">B.Sc. in Computer Engineering</h3>
+            <span class="edu-school">Addis Ababa Science and Technology University (AASTU)</span>
+            <p class="edu-detail">Undergraduate degree coursework focusing on computer architecture, software engineering, and digital systems.</p>
+          </div>
+
+          <div class="edu-card">
+            <h3 class="edu-degree">Certifications & Training</h3>
+            <ul class="cert-list">
+              <li><strong>edX:</strong> Data Analysis for Excel Certification (Oct 2025)</li>
+              <li><strong>Google:</strong> Data Analytics Certificate (SEP 2025 — 2026)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="section contact-section" id="contact">
-      <div class="shell contact-inner"><p class="kicker">06 / CONTACT</p><h2>Have a data challenge<br>or an opportunity in mind<span class="accent">?</span></h2><p class="contact-copy">I'm interested in opportunities where data, software, and AI can solve real problems. Reach out and let's connect.</p><div class="contact-actions"><a class="button button-primary" href="mailto:nohabig3@gmail.com">Email <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="https://t.me/obig20" target="_blank" rel="noopener">Telegram <span aria-hidden="true">↗</span></a></div>
-<form class="contact-form" action="https://formspree.io/f/yourFormId" method="POST"><input type="text" name="name" placeholder="Your name" required><input type="email" name="email" placeholder="Your email" required><textarea name="message" placeholder="Your message" required></textarea><button type="submit" class="button button-primary">Send <span aria-hidden="true">↗</span></button></form><div class="contact-details"><div><span>EMAIL</span><a href="mailto:nohabig3@gmail.com">nohabig3@gmail.com</a></div><div><span>LOCATION</span><p>Addis Ababa, Ethiopia</p></div><div><span>PROFILES</span><p><a href="https://github.com/obig20" target="_blank" rel="noopener">GitHub</a></p></div></div></div>
+    <!-- Contact Section -->
+    <section class="section bg-alt" id="contact">
+      <div class="container text-center">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="contact-intro">
+          I am actively seeking opportunities in Data Analytics, Data Annotation, and Computer Engineering. Feel free to reach out directly via email or Telegram!
+        </p>
+
+        <div class="contact-actions">
+          <a href="mailto:nohabig3@gmail.com" class="btn btn-primary">
+            📧 nohabig3@gmail.com
+          </a>
+          <a href="https://t.me/obig20" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            ✈️ Telegram: @obig20
+          </a>
+        </div>
+      </div>
     </section>
   </main>
-  <footer class="footer"><div class="shell footer-inner"><a class="brand" href="#home"><span class="brand-mark">N.</span><span>NOHA TILAHUN</span></a><span>DATA · AI · SYSTEMS</span><span>© <span id="year"></span> Noha Tilahun</span><a href="#home" class="back-top">BACK TO TOP ↑</a></div></footer>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Noha Tilahun. Built with semantic HTML, modern CSS & JavaScript.</p>
+      <div class="footer-links">
+        <a href="https://github.com/obig20" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://t.me/obig20" target="_blank" rel="noopener noreferrer">Telegram</a>
+      </div>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

@@ -1,11 +1,16 @@
-# TODO — information only the owner can supply
+# Portfolio Action Items (For Noha Tilahun)
 
-- [ ] LinkedIn profile URL
-- [ ] Tableau Public URL
-- [ ] Measurable outcome for each of the 5 projects
-- [ ] Screenshots or live demo links for each project
-- [ ] Start/end dates for the freelance Amharic audio transcription work
-- [ ] Description of the "R&D Group" role (employer, dates, responsibilities)
-- [ ] Google Data Analytics Professional Certificate completion status
-- [ ] Rename GitHub repo `fruad_detection` to `fraud_detection`, then update link
-- [ ] Formspree form ID (replace `yourFormId` in contact form action)
+Please supply or update the following items to complete all portfolio sections:
+
+- [ ] **LinkedIn Profile URL**: Provide your exact LinkedIn URL to enable the profile link button.
+- [ ] **Tableau Public URL**: Provide your Tableau Public profile link if applicable.
+- [ ] **Measurable Project Outcomes**: Provide key metrics or impact statistics for each project:
+  1. Lead Forge (AI Lead Response)
+  2. E-Commerce Revenue Intelligence
+  3. Fraud Detection System
+  4. HR Analytics SQL
+  5. Python Data Cleaning Automation
+- [ ] **Project Live Demos & Screenshots**: Add live web links or screenshot image assets for each project card.
+- [ ] **Freelance Work Dates**: Specify the start and end dates for the freelance audio transcription entry.
+- [ ] **Google Data Analytics Certificate**: Confirm completion status and update date string if needed.
+- [ ] **GitHub Repository Rename**: Rename `fruad_detection` to `fraud_detection` on GitHub and update the link in `index.html`.

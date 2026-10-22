@@ -1,38 +1,66 @@
-const toggle = document.querySelector('.menu-toggle');
-const links = document.querySelector('.nav-links');
-if (toggle && links) {
-  toggle.addEventListener('click', () => {
-    const expanded = toggle.getAttribute('aria-expanded') === 'true';
-    toggle.setAttribute('aria-expanded', String(!expanded));
-    links.classList.toggle('open', !expanded);
-  });
-  links.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-    links.classList.remove('open');
-    toggle.setAttribute('aria-expanded', 'false');
-  }));
-}
-const yearEl = document.getElementById('year');
-if (yearEl) yearEl.textContent = new Date().getFullYear();
+// 1. Enable Progressive Feature Class for JS
+document.documentElement.classList.add('js-enabled');
 
-const themeBtn = document.querySelector('.theme-toggle');
-if (themeBtn) {
-  const saved = localStorage.getItem('theme');
-  if (saved === 'dark') document.body.classList.add('dark');
-  themeBtn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
-  themeBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-    const isDark = document.body.classList.contains('dark');
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    themeBtn.textContent = isDark ? '☀️' : '🌙';
-  });
-}
+// 2. Safe Theme Toggle with try/catch Validation
+(function initTheme() {
+  const themeToggleBtn = document.getElementById('theme-toggle');
+  let currentTheme = 'dark';
 
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
-    const id = a.getAttribute('href');
-    if (id.length > 1) {
-      const target = document.querySelector(id);
-      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+  try {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light' || savedTheme === 'dark') {
+      currentTheme = savedTheme;
+    } else {
+      currentTheme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
     }
-  });
-});
+  } catch (e) {
+    console.warn('localStorage read disabled or failed:', e);
+  }
+
+  document.documentElement.setAttribute('data-theme', currentTheme);
+  if (themeToggleBtn) {
+    themeToggleBtn.setAttribute('aria-pressed', currentTheme === 'light' ? 'true' : 'false');
+
+    themeToggleBtn.addEventListener('click', () => {
+      const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      themeToggleBtn.setAttribute('aria-pressed', newTheme === 'light' ? 'true' : 'false');
+
+      try {
+        localStorage.setItem('theme', newTheme);
+      } catch (e) {
+        console.warn('localStorage write disabled or failed:', e);
+      }
+    });
+  }
+})();
+
+// 3. Scroll Reveal with Safety Fallback & Reduced Motion Support
+(function initScrollReveal() {
+  const reveals = document.querySelectorAll('.reveal');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (prefersReducedMotion || !('IntersectionObserver' in window)) {
+    reveals.forEach(el => el.classList.add('active'));
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  reveals.forEach(el => observer.observe(el));
+
+  setTimeout(() => {
+    reveals.forEach(el => {
+      if (!el.classList.contains('active')) {
+        el.classList.add('active');
+      }
+    });
+  }, 1500);
+})();
